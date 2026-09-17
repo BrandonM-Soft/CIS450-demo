@@ -4,7 +4,7 @@ import os
 
 print("Current working directory:", os.getcwd())
 
-for i in range(12):
+for i in range(20):
     img = cv.imread(f"photos/{i+1}.JPEG")
     print(img.shape)
 
