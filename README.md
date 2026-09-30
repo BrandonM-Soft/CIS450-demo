@@ -24,3 +24,5 @@ frog.png - blend:036/100, thresh:024/255, blur:19/31 <br>
 map.png - blend:067/100, thresh:048/255, blur:01/31 <br>
 pokemon.png - blend:051/100, thresh:103/255, blur:05/31 <br>
 sunset.png - blend:045/100, thresh:074/255, blur:11/31 <br>
+
+## AI Code Evaluation Assistance (Powered by Google Antigravity)
