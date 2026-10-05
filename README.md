@@ -24,3 +24,25 @@ frog.png - blend:036/100, thresh:024/255, blur:19/31 <br>
 map.png - blend:067/100, thresh:048/255, blur:01/31 <br>
 pokemon.png - blend:051/100, thresh:103/255, blur:05/31 <br>
 sunset.png - blend:045/100, thresh:074/255, blur:11/31 <br>
+
+## AI Code Evaluation Assistance (Powered by Google Antigravity)
+This section is dedicated to analyzing how the `matplotlib.pyplot` works, as demonstrated in `./matplotlib-antigravity-eval/plotter.py`. Google Antigravity was used to search through the codebase and analyze the functions of the library through deep analysis. Starting with:
+
+* `plt.plot`: Maps coordinate pairs *x* and *y* into a 2D Cartesian plane and draws lines connecting those coordinates.
+
+↓ Which calls ↓ 
+
+* `gca().plot()`: Stands for "Get Current Axes". It inspects the current active figure from `gcf()` and returns its active `Axes` object instance. If it is not active, it will create a default figure and axes.
+
+↓ Which calls ↓ 
+
+* `Axes.plot`: the method that handles all of the logic behind the 2D Line and marker plotting. With `plt.plot()` acting as a wrapper for this object. It works in four stages:
+    1) Parses arguements and variables from `plot()`
+    2) Adds line styles and properties
+    3) Creates a `Line2D` artist object and executes the `add_line()` function
+    4) Autoscales the axes if the flags `scalex` and `scaley` are `True`
+    5) Returns a Python list of `Line2D` instances.
+
+↓ Which calls ↓ 
+
+* `add_line`: Registers a `Line2D` artist within an `Axes` instance.
