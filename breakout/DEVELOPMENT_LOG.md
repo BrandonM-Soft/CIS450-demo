@@ -1,7 +1,7 @@
 # Development Log - Breakout
 
-Bryan Olmstead
-2026.10.27
+Brandon Mitchell
+2026.10.28
 
 ## First Prompt
 
