@@ -3,6 +3,8 @@
 Brandon Mitchell
 2026.10.28
 
+Claude Opus 4.6
+
 ## First Prompt
 
 Within the `breakout` directory:
