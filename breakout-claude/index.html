@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+  Breakout Game
+  MIT License - Copyright (c) 2026 CIS-450 Emergent Technologies
+  See LICENSE for details.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Breakout</h1>
+
+    <div id="info-bar">
+      <span id="score-display">Score: 0</span>
+      <span id="lives-display">Lives: 3</span>
+    </div>
+
+    <canvas id="game-canvas" width="480" height="400"></canvas>
+
+    <div id="message-area">
+      <p id="game-message">Press <strong>Space</strong> to start</p>
+    </div>
+
+    <div id="instructions">
+      <p><strong>Controls:</strong> ← → Arrow Keys to move paddle &nbsp;|&nbsp; Space to launch ball / restart</p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

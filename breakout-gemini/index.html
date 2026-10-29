@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1 class="game-title">BREAKOUT</h1>
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">SCORE:</span>
+          <span class="hud-value" id="score-display">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">LIVES:</span>
+          <span class="hud-value" id="lives-display">3</span>
+        </div>
+        <button id="restart-button" class="restart-btn" type="button">Restart Game</button>
+      </div>
+    </header>
+
+    <main class="canvas-wrapper">
+      <canvas id="game-canvas" width="800" height="600" role="img" aria-label="Breakout game screen"></canvas>
+    </main>
+
+    <footer class="game-footer">
+      <p class="instructions">
+        <strong>Controls:</strong> Left / Right Arrow keys to move paddle &bull; Space or Enter to launch ball / restart
+      </p>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
